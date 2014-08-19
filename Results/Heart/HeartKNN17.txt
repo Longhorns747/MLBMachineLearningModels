@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 17 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     cleavlandHeart
+Instances:    303
+Attributes:   14
+              age
+               sex
+               cp
+               trestbps
+               cho
+               fbs
+               restecg
+               thalach
+               exang
+               oldpeak
+               slope
+               ca
+               thal
+               num
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 17 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          89               86.4078 %
+Incorrectly Classified Instances        14               13.5922 %
+Kappa statistic                          0.7283
+Mean absolute error                      0.2343
+Root mean squared error                  0.3267
+Relative absolute error                 46.8032 %
+Root relative squared error             64.7182 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      93.6893 %
+Total Number of Instances              103     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.902    0.173    0.836      0.902    0.868      0.731    0.925     0.904     0
+                 0.827    0.098    0.896      0.827    0.860      0.731    0.925     0.935     1
+Weighted Avg.    0.864    0.135    0.866      0.864    0.864      0.731    0.925     0.919     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 46  5 |  a = 0
+  9 43 |  b = 1
+

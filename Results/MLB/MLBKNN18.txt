@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 18 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     MLBWinRates
+Instances:    2349
+Attributes:   10
+              HR
+              SOA
+              R
+              RA
+              SLG
+              ERA
+              BB
+              WHIP
+              AVG
+              Result
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 18 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.14 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         392               49.0613 %
+Incorrectly Classified Instances       407               50.9387 %
+Kappa statistic                          0.3485
+Mean absolute error                      0.2444
+Root mean squared error                  0.3488
+Relative absolute error                 77.1262 %
+Root relative squared error             87.7424 %
+Coverage of cases (0.95 level)          99.7497 %
+Mean rel. region size (0.95 level)      72.6909 %
+Total Number of Instances              799     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.583    0.065    0.614      0.583    0.598      0.530    0.934     0.689     .400
+                 0.576    0.194    0.506      0.576    0.539      0.367    0.779     0.493     .450
+                 0.450    0.229    0.399      0.450    0.423      0.213    0.718     0.393     .500
+                 0.329    0.139    0.369      0.329    0.348      0.199    0.763     0.353     .550
+                 0.535    0.032    0.735      0.535    0.619      0.577    0.934     0.739     .600
+Weighted Avg.    0.491    0.149    0.501      0.491    0.492      0.349    0.806     0.505     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+  70  48   2   0   0 |   a = .400
+  32 118  49   6   0 |   b = .450
+  11  51  91  47   2 |   c = .500
+   1  12  73  52  20 |   d = .550
+   0   4  13  36  61 |   e = .600
+

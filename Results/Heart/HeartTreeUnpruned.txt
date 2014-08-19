@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -U -M 2
+Relation:     cleavlandHeart
+Instances:    303
+Attributes:   14
+              age
+               sex
+               cp
+               trestbps
+               cho
+               fbs
+               restecg
+               thalach
+               exang
+               oldpeak
+               slope
+               ca
+               thal
+               num
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+ cp <= 3
+|    thal <= 3
+|   |    ca <= 1
+|   |   |    sex <= 0: 0 (49.72/1.0)
+|   |   |    sex > 0
+|   |   |   |    exang <= 0
+|   |   |   |   |   age <= 56: 0 (35.82/2.0)
+|   |   |   |   |   age > 56
+|   |   |   |   |   |    cho <= 259: 0 (8.0/2.0)
+|   |   |   |   |   |    cho > 259: 1 (4.0)
+|   |   |   |    exang > 0: 0 (6.0)
+|   |    ca > 1
+|   |   |    trestbps <= 136
+|   |   |   |    thalach <= 167: 1 (4.0)
+|   |   |   |    thalach > 167: 0 (2.0)
+|   |   |    trestbps > 136: 0 (4.18)
+|    thal > 3
+|   |    ca <= 0
+|   |   |    sex <= 0: 0 (2.28)
+|   |   |    sex > 0
+|   |   |   |    thal <= 6: 0 (3.0)
+|   |   |   |    thal > 6
+|   |   |   |   |    thalach <= 142: 1 (3.0)
+|   |   |   |   |    thalach > 142
+|   |   |   |   |   |    slope <= 1: 0 (7.0)
+|   |   |   |   |   |    slope > 1
+|   |   |   |   |   |   |    exang <= 0
+|   |   |   |   |   |   |   |    fbs <= 0
+|   |   |   |   |   |   |   |   |    thalach <= 148: 0 (2.62)
+|   |   |   |   |   |   |   |   |    thalach > 148
+|   |   |   |   |   |   |   |   |   |    cp <= 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |    cp > 1: 1 (2.0)
+|   |   |   |   |   |   |   |    fbs > 0: 0 (2.0)
+|   |   |   |   |   |   |    exang > 0: 1 (3.0/1.0)
+|   |    ca > 0
+|   |   |    restecg <= 1
+|   |   |   |    slope <= 1: 0 (3.0)
+|   |   |   |    slope > 1: 1 (7.38/1.38)
+|   |   |    restecg > 1: 1 (7.0)
+ cp > 3
+|    ca <= 0
+|   |    thal <= 6
+|   |   |    exang <= 0
+|   |   |   |   age <= 59: 0 (17.0)
+|   |   |   |   age > 59
+|   |   |   |   |   age <= 61: 1 (2.0)
+|   |   |   |   |   age > 61: 0 (6.0/1.0)
+|   |   |    exang > 0
+|   |   |   |    restecg <= 1
+|   |   |   |   |    slope <= 1: 0 (2.0)
+|   |   |   |   |    slope > 1: 1 (7.58/1.0)
+|   |   |   |    restecg > 1: 0 (4.0)
+|   |    thal > 6
+|   |   |    oldpeak <= 0.6
+|   |   |   |    restecg <= 1
+|   |   |   |   |    trestbps <= 136: 0 (4.0)
+|   |   |   |   |    trestbps > 136: 1 (2.0)
+|   |   |   |    restecg > 1: 1 (4.46/1.0)
+|   |   |    oldpeak > 0.6: 1 (17.42)
+|    ca > 0
+|   |    sex <= 0
+|   |   |    slope <= 1: 0 (2.0)
+|   |   |    slope > 1: 1 (13.0/1.0)
+|   |    sex > 0: 1 (62.54/2.0)
+
+Number of Leaves  : 	33
+
+Size of the tree : 	65
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          80               77.6699 %
+Incorrectly Classified Instances        23               22.3301 %
+Kappa statistic                          0.5534
+Mean absolute error                      0.2359
+Root mean squared error                  0.4646
+Relative absolute error                 47.1128 %
+Root relative squared error             92.0472 %
+Coverage of cases (0.95 level)          79.6117 %
+Mean rel. region size (0.95 level)      52.4272 %
+Total Number of Instances              103     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.784    0.231    0.769      0.784    0.777      0.554    0.728     0.702     0
+                 0.769    0.216    0.784      0.769    0.777      0.554    0.728     0.677     1
+Weighted Avg.    0.777    0.223    0.777      0.777    0.777      0.554    0.728     0.689     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40 11 |  a = 0
+ 12 40 |  b = 1
+

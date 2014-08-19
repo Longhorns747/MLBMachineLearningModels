@@ -1,0 +1,91 @@
+MLB
+
+Perceptron
+Model: 5.92 s
+Test: 0.02 s
+Correct: 64.2053 %
+
+SVM
+Model: 0.43 s
+Test: 0.02 s
+Correct: 59.4493 %
+
+SVM Normalized
+Model: 5.40 s
+Test: 1.21 s
+Correct: 56.6959 %
+
+Tree Pruned 
+Model: 0.43 Seconds
+Test: 0.05 Seconds
+Number of Leaves  : 293
+Size of the tree : 585
+Correct: 54.1927 %
+
+Tree Unpruned
+Model: 0.09 s
+Test: 0.02 s
+Number of Leaves  : 322
+Size of the tree : 643
+Correct: 53.567 %
+
+Boosting
+Model: 0.89 s
+Test: 0.01 s
+Number of Leaves  : 298
+Size of the tree : 595
+Correct: 51.8148 %
+
+KNN19
+Model: 0.00 s
+Test: 0.14 s
+Correct: 51.1890 %
+
+AVG
+Correct: 55.8734 %
+
+Heart
+
+SVM
+Model: 0.01 s
+Test: 0.00 s
+Correct: 88.3495 %
+
+KNN17
+Model: 0.00 s
+Test: 0.01 s
+Correct: 86.4078 %
+
+SVM Normalized
+Model: 0.05 s
+Test: 0.01 s
+Correct: 86.4078 %
+
+Boosting
+Model: 0.34 s
+Test: 0.00 s
+Number of Leaves  : 23
+Size of the tree : 45
+Correct: 81.5534 %
+
+Perceptron
+Model: 0.71 s
+Test: 0.00 s
+Correct: 81.5534 %
+
+Tree Pruned 
+Model: 0.01 Seconds
+Test: 0.00 Seconds
+Number of Leaves  : 22
+Size of the tree : 43
+Correct: 78.6408 %
+
+Tree Unpruned
+Model: 0.01 s
+Test: 0.00 s
+Number of Leaves  : 33
+Size of the tree : 65
+Correct: 77.6699 %
+
+AVG
+Correct: 82.9403 %

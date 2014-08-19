@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     cleavlandHeart
+Instances:    303
+Attributes:   14
+              age
+               sex
+               cp
+               trestbps
+               cho
+               fbs
+               restecg
+               thalach
+               exang
+               oldpeak
+               slope
+               ca
+               thal
+               num
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+ cp <= 3
+|    thal <= 3
+|   |    ca <= 1
+|   |   |    sex <= 0: 0 (49.72/1.0)
+|   |   |    sex > 0
+|   |   |   |   age <= 56: 0 (38.82/2.0)
+|   |   |   |   age > 56
+|   |   |   |   |    cho <= 259: 0 (11.0/2.0)
+|   |   |   |   |    cho > 259: 1 (4.0)
+|   |    ca > 1
+|   |   |    trestbps <= 136
+|   |   |   |    thalach <= 167: 1 (4.0)
+|   |   |   |    thalach > 167: 0 (2.0)
+|   |   |    trestbps > 136: 0 (4.18)
+|    thal > 3
+|   |    ca <= 0: 0 (27.9/8.0)
+|   |    ca > 0
+|   |   |    restecg <= 1
+|   |   |   |    slope <= 1: 0 (3.0)
+|   |   |   |    slope > 1: 1 (7.38/1.38)
+|   |   |    restecg > 1: 1 (7.0)
+ cp > 3
+|    ca <= 0
+|   |    thal <= 6
+|   |   |    exang <= 0
+|   |   |   |   age <= 59: 0 (17.0)
+|   |   |   |   age > 59
+|   |   |   |   |   age <= 61: 1 (2.0)
+|   |   |   |   |   age > 61: 0 (6.0/1.0)
+|   |   |    exang > 0
+|   |   |   |    restecg <= 1
+|   |   |   |   |    slope <= 1: 0 (2.0)
+|   |   |   |   |    slope > 1: 1 (7.58/1.0)
+|   |   |   |    restecg > 1: 0 (4.0)
+|   |    thal > 6
+|   |   |    oldpeak <= 0.6
+|   |   |   |    restecg <= 1
+|   |   |   |   |    trestbps <= 136: 0 (4.0)
+|   |   |   |   |    trestbps > 136: 1 (2.0)
+|   |   |   |    restecg > 1: 1 (4.46/1.0)
+|   |   |    oldpeak > 0.6: 1 (17.42)
+|    ca > 0: 1 (77.54/5.0)
+
+Number of Leaves  : 	22
+
+Size of the tree : 	43
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          81               78.6408 %
+Incorrectly Classified Instances        22               21.3592 %
+Kappa statistic                          0.5726
+Mean absolute error                      0.2395
+Root mean squared error                  0.4547
+Relative absolute error                 47.8344 %
+Root relative squared error             90.0823 %
+Coverage of cases (0.95 level)          83.4951 %
+Mean rel. region size (0.95 level)      67.9612 %
+Total Number of Instances              103     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.765    0.192    0.796      0.765    0.780      0.573    0.751     0.759     0
+                 0.808    0.235    0.778      0.808    0.792      0.573    0.751     0.691     1
+Weighted Avg.    0.786    0.214    0.787      0.786    0.786      0.573    0.751     0.725     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 12 |  a = 0
+ 10 42 |  b = 1
+

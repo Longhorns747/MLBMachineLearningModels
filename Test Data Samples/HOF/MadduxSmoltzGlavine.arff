@@ -1,0 +1,14 @@
+@relation MadduxSmoltzGlavine
+
+@attribute W numeric
+@attribute Kper9 numeric
+@attribute IP numeric
+@attribute ERA numeric
+@attribute WHIP numeric
+@attribute Inducted {Y, N}
+
+@data
+355,6.06,5008.3,3.16,1.14,?
+305,5.32,4413,3.54,1.31,?
+213,7.99,3473.2,3.33,1.18,?
+39,5.89,861.9,4.05,1.34,?

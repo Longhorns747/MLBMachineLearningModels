@@ -1,0 +1,14 @@
+@relation PedroiaBiggioOrtiz
+
+@attribute H numeric
+@attribute AVG numeric
+@attribute HR numeric
+@attribute RBI numeric
+@attribute SLG numeric
+@attribute OBP numeric
+@attribute Inducted {N, Y}
+
+@data
+3060,0.281,291,1175,0.433,0.363,?
+1863,0.285,401,1326,0.547,0.38,?
+1025,0.303,90,409,0.461,0.369,?

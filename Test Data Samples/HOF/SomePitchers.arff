@@ -1,0 +1,13 @@
+@relation SomePitchers
+
+@attribute Kper9 numeric
+@attribute IP numeric
+@attribute ERA numeric
+@attribute WHIP numeric
+@attribute Inducted {Y, N}
+
+@data
+6.06,5008.3,3.16,1.14,?
+6.92,2687.3,3.31,1.17,?
+8.2,1162.9,3.76,1.31,?
+5.89,861.9,4.05,1.34,?

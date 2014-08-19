@@ -1,0 +1,255 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     MLBWinRates
+Instances:    2349
+Attributes:   10
+              HR
+              SOA
+              R
+              RA
+              SLG
+              ERA
+              BB
+              WHIP
+              AVG
+              Result
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: .400, .450
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.013  * (normalized) HR
+ +       0.5209 * (normalized) SOA
+ +       5.6304 * (normalized) R
+ +      -6.7982 * (normalized) RA
+ +       4.1316 * (normalized) SLG
+ +      -5.0727 * (normalized) ERA
+ +       2.0009 * (normalized) BB
+ +      -3.1196 * (normalized) WHIP
+ +       3.2332 * (normalized) AVG
+ +       1.8978
+
+Number of kernel evaluations: 30265 (69.097% cached)
+
+Classifier for classes: .400, .500
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0916 * (normalized) HR
+ +      -0.2404 * (normalized) SOA
+ +       7.261  * (normalized) R
+ +      -5.918  * (normalized) RA
+ +       3.8545 * (normalized) SLG
+ +      -6.2404 * (normalized) ERA
+ +       2.3999 * (normalized) BB
+ +      -3.957  * (normalized) WHIP
+ +       3.6413 * (normalized) AVG
+ +       1.075 
+
+Number of kernel evaluations: 44599 (67.946% cached)
+
+Classifier for classes: .400, .550
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0209 * (normalized) HR
+ +      -0.2644 * (normalized) SOA
+ +       5.9807 * (normalized) R
+ +      -5.5415 * (normalized) RA
+ +       3.5541 * (normalized) SLG
+ +      -5.5102 * (normalized) ERA
+ +       1.6211 * (normalized) BB
+ +      -3.3622 * (normalized) WHIP
+ +       2.9614 * (normalized) AVG
+ +       1.1739
+
+Number of kernel evaluations: 22821 (71.623% cached)
+
+Classifier for classes: .400, .600
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2836 * (normalized) HR
+ +      -0.6481 * (normalized) SOA
+ +       5.0359 * (normalized) R
+ +      -4.8257 * (normalized) RA
+ +       2.651  * (normalized) SLG
+ +      -4.2326 * (normalized) ERA
+ +       1.1385 * (normalized) BB
+ +      -2.7995 * (normalized) WHIP
+ +       2.2358 * (normalized) AVG
+ +       0.9522
+
+Number of kernel evaluations: 19200 (72.525% cached)
+
+Classifier for classes: .450, .500
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0335 * (normalized) HR
+ +      -0.8458 * (normalized) SOA
+ +       7.3412 * (normalized) R
+ +      -6.1186 * (normalized) RA
+ +       4.1721 * (normalized) SLG
+ +      -5.8603 * (normalized) ERA
+ +       2.4638 * (normalized) BB
+ +      -3.8886 * (normalized) WHIP
+ +       3.4192 * (normalized) AVG
+ +       0.4652
+
+Number of kernel evaluations: 51361 (69.131% cached)
+
+Classifier for classes: .450, .550
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1674 * (normalized) HR
+ +      -0.8042 * (normalized) SOA
+ +       7.6055 * (normalized) R
+ +      -7.2567 * (normalized) RA
+ +       4.7673 * (normalized) SLG
+ +      -5.8777 * (normalized) ERA
+ +       2.4159 * (normalized) BB
+ +      -4.7321 * (normalized) WHIP
+ +       2.7717 * (normalized) AVG
+ +       0.8976
+
+Number of kernel evaluations: 38183 (68.974% cached)
+
+Classifier for classes: .450, .600
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.3765 * (normalized) HR
+ +      -1.3474 * (normalized) SOA
+ +       6.8814 * (normalized) R
+ +      -5.9685 * (normalized) RA
+ +       3.013  * (normalized) SLG
+ +      -4.8759 * (normalized) ERA
+ +       1.6215 * (normalized) BB
+ +      -3.1896 * (normalized) WHIP
+ +       2.0509 * (normalized) AVG
+ +       0.4526
+
+Number of kernel evaluations: 30573 (72.826% cached)
+
+Classifier for classes: .500, .550
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.1797 * (normalized) HR
+ +      -1.2004 * (normalized) SOA
+ +       6.2669 * (normalized) R
+ +      -6.6134 * (normalized) RA
+ +       4.2922 * (normalized) SLG
+ +      -5.7085 * (normalized) ERA
+ +       1.5663 * (normalized) BB
+ +      -4.0051 * (normalized) WHIP
+ +       2.5519 * (normalized) AVG
+ +       1.2619
+
+Number of kernel evaluations: 37277 (67.943% cached)
+
+Classifier for classes: .500, .600
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2599 * (normalized) HR
+ +      -1.7131 * (normalized) SOA
+ +       7.5984 * (normalized) R
+ +      -6.889  * (normalized) RA
+ +       3.2528 * (normalized) SLG
+ +      -5.6088 * (normalized) ERA
+ +       1.6123 * (normalized) BB
+ +      -3.5305 * (normalized) WHIP
+ +       2.4769 * (normalized) AVG
+ +       0.4569
+
+Number of kernel evaluations: 40763 (71.299% cached)
+
+Classifier for classes: .550, .600
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.6064 * (normalized) HR
+ +      -1.7676 * (normalized) SOA
+ +       6.914  * (normalized) R
+ +      -5.7027 * (normalized) RA
+ +       1.8024 * (normalized) SLG
+ +      -5.2868 * (normalized) ERA
+ +       1.5271 * (normalized) BB
+ +      -2.3163 * (normalized) WHIP
+ +       2.416  * (normalized) AVG
+ -       0.2077
+
+Number of kernel evaluations: 35800 (68.509% cached)
+
+
+
+Time taken to build model: 0.43 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         475               59.4493 %
+Incorrectly Classified Instances       324               40.5507 %
+Kappa statistic                          0.4833
+Mean absolute error                      0.2611
+Root mean squared error                  0.348 
+Relative absolute error                 82.3945 %
+Root relative squared error             87.5473 %
+Coverage of cases (0.95 level)          99.8748 %
+Mean rel. region size (0.95 level)      80      %
+Total Number of Instances              799     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.642    0.065    0.636      0.642    0.639      0.575    0.923     0.577     .400
+                 0.580    0.133    0.601      0.580    0.591      0.453    0.832     0.530     .450
+                 0.619    0.188    0.527      0.619    0.569      0.410    0.784     0.470     .500
+                 0.513    0.112    0.529      0.513    0.521      0.405    0.822     0.442     .550
+                 0.640    0.025    0.811      0.640    0.716      0.681    0.952     0.711     .600
+Weighted Avg.    0.594    0.117    0.604      0.594    0.597      0.484    0.849     0.530     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+  77  41   2   0   0 |   a = .400
+  35 119  50   1   0 |   b = .450
+   9  33 125  35   0 |   c = .500
+   0   5  55  81  17 |   d = .550
+   0   0   5  36  73 |   e = .600
+
